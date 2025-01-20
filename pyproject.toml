@@ -1,0 +1,18 @@
+[project]
+name = "bully-tracker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Cristian Ticu",email = "cristian.ticu@eggnita.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "psycopg[binary] (>=3.2.4,<4.0.0)",
+    "fastapi[standard] (>=0.115.6,<0.116.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

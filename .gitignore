@@ -1,0 +1,11 @@
+# Any compiled (pyc) files
+__pycache__/
+
+# User configuration
+.vscode/
+
+# Environment variables
+*.env
+
+# Misc
+.DS_Store
