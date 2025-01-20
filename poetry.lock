@@ -514,6 +514,21 @@ files = [
 ]
 
 [[package]]
+name = "psycopg-pool"
+version = "3.2.4"
+description = "Connection Pool for Psycopg"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "psycopg_pool-3.2.4-py3-none-any.whl", hash = "sha256:f6a22cff0f21f06d72fb2f5cb48c618946777c49385358e0c88d062c59cbd224"},
+    {file = "psycopg_pool-3.2.4.tar.gz", hash = "sha256:61774b5bbf23e8d22bedc7504707135aaf744679f8ef9b3fe29942920746a6ed"},
+]
+
+[package.dependencies]
+typing-extensions = ">=4.6"
+
+[[package]]
 name = "pydantic"
 version = "2.10.5"
 description = "Data validation using Python type hints"
@@ -1118,4 +1133,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "6b80eaeb888637262c7a7288fdd7572650729c351444a5ac29f2736f21883705"
+content-hash = "f0568135c6783e95b26a349f44e3effec59d9bd75aaaed5d8410cabe2cdda5b3"
