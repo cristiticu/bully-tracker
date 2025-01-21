@@ -3,13 +3,13 @@ from contextlib import asynccontextmanager
 from typing import Any, Callable, Sequence, TypeVar
 from psycopg import AsyncCursor
 from psycopg_pool import AsyncConnectionPool
-from settings import POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB_NAME
+from settings import POSTGRES_ADDRESS, POSTGRES_PORT, POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB_NAME
 from shared.entity import Entity
 
 T = TypeVar('T', bound=Entity)
 
 connection_string = f"postgresql://{POSTGRES_USER}:{
-    POSTGRES_PASSWORD}@localhost:5432/{POSTGRES_DB_NAME}"
+    POSTGRES_PASSWORD}@{POSTGRES_ADDRESS}:{POSTGRES_PORT}/{POSTGRES_DB_NAME}"
 
 
 db_connection_pool = AsyncConnectionPool(connection_string, open=False)
